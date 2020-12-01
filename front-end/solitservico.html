@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Potenza - Marido de Aluguel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+  
+
+<div class="container-fluid">
+  <link rel="stylesheet" href="registrese.css"> 
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    /*.row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      /*background-color: #f1f1f1;*/
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #222222;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+    </div>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src = "img/logo.png" class = "logo">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contratante.html"><span class="glyphicon glyphicon glyphicon-user"></span> Olá Contratante!</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+    </div>
+      <form>
+      <div class="col-sm-4 text-left">
+      <label for="servico">Selecione o Tipo de Seriço</label>
+      <br>
+      <input type="checkbox" class="form-check-input" id="hidraulica">
+      <label class="form-check-label" for="hidraulica">Hidráulica</label>
+      <br>
+      <input type="checkbox" class="form-check-input" id="eletrica">
+      <label class="form-check-label" for="eletrica">Elétrica</label>
+      <br>
+      <input type="checkbox" class="form-check-input" id="alvenaria">
+      <label class="form-check-label" for="alvenaria">Alvenaria</label>
+      <br>
+      <input type="checkbox" class="form-check-input" id="outros">
+      <label class="form-check-label" for="alvenaria">Outros</label>
+      <hr>
+      <label for="fname">Endereço</label>
+      <input type="text" id="endereco" name="endereco" placeholder="Rua das Flores, 130">
+      <hr>  
+      <label for="data">Data de Início:</label>
+      <input type="date" id="data" name="data" placeholder="01/01/2020">
+      <hr>  
+      <label for="data">Data Estimada de Fim:</label>
+      <input type="date" id="data" name="data" placeholder="01/01/2020">
+      <hr>
+       </div>  
+       <div class="col-sm-4 text-left">
+       <label for="horario">Horario Desejado:</label>
+        <select id="horario" name="horario">
+            <option value="nove">8:00</option>
+            <option value="nove">9:00</option>
+            <option value="dez">10:00</option>
+            <option value="onze">11:00</option>
+            <option value="doze">12:00</option>
+            <option value="treze">13:00</option>
+            <option value="quatorze">14:00</option>
+            <option value="quinze">15:00</option>
+            <option value="dezeseis">16:00</option>
+            <option value="dezessete">17:00</option>
+        </select>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="doc" placeholder="anasilva@outlook.com">
+      <hr>
+      <label for="telefone1">Telefone para Contato 01:</label>
+      <input type="text" id="telefone1" name="telefone1" placeholder="(11) 95250-4531">
+      <hr>
+      <label for="telefone2">Telefone para Contato 02:</label>
+      <input type="text" id="telefone2" name="telefone2" placeholder="(11) 2343-00000">
+      <hr>
+        <input type="reset" value="Cancelar">
+        <input type="submit" value="Confirmar">
+        </div>
+    </form>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+    </body>
+    
+<footer class=" footer navbar-fixed-bottom">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: All Right Reserved
+    </div>
+</footer>
+    
+</html>
