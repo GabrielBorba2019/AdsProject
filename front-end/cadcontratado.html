@@ -75,7 +75,7 @@
     <div class="col-sm-2 sidenav">
     
     </div>
-      <form>
+      <form name = "form1" action= "tratarCadastroContratado.php" method= "post">
       <div class="col-sm-4 text-left"> 
       <label for="servico">Selecione os serviços</label>
       <br>
@@ -93,7 +93,7 @@
       <hr>
       <h3> Dados Bancários </h3>
       <label for="namecart">Nome do Titular</label>
-      <input type="text" id="namecart" name="namecart" placeholder="Ana da Silva">
+      <input type="text" id="namecart" name="namecart" placeholder="Ana da Silva" value = "<?php echo $_GET['nomeTitular'];?>">
       <hr>
           
       <label for="banco">Selecione o Banco</label>
@@ -110,11 +110,11 @@
       <hr>
           
       <label for="agencia">Numero da Agência</label>
-      <input type="text" id="agencia" name="agencia" placeholder="0000">
+      <input type="text" id="agencia" name="agencia" placeholder="0000" value = "<?php echo $_GET['agencia'];?>">
       <hr>
       
       <label for="conta">Numero da Conta</label>
-      <input type="text" id="conta" name="conta" placeholder="0000-0">
+      <input type="text" id="conta" name="conta" placeholder="0000-0" value = "<?php echo $_GET['conta'];?>">
       <hr>
           
       <label for="doc">CPF</label>
